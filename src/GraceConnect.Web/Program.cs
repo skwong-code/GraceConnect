@@ -6,6 +6,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+// === SUPABASE AUTH (Priority 1) ===
+var supabaseUrl = builder.Configuration["Supabase:Url"]
+    ?? throw new InvalidOperationException("Supabase URL missing in appsettings.json");
+var supabaseAnonKey = builder.Configuration["Supabase:AnonKey"]
+    ?? throw new InvalidOperationException("Supabase AnonKey missing in appsettings.json");
+
+var supabaseService = new GraceConnect.Shared.SupabaseService(supabaseUrl, supabaseAnonKey);
+await supabaseService.InitializeAsync();
+
+builder.Services.AddSingleton(supabaseService);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

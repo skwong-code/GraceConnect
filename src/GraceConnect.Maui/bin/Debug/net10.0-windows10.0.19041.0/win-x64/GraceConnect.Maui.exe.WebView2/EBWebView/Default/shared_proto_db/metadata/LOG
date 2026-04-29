@@ -1,2 +1,3 @@
-2026/04/29-11:13:47.428 9d0c Creating DB C:\Dev\GraceConnect\src\GraceConnect.Maui\bin\Debug\net10.0-windows10.0.19041.0\win-x64\GraceConnect.Maui.exe.WebView2\EBWebView\Default\shared_proto_db\metadata since it was missing.
-2026/04/29-11:13:47.475 9d0c Reusing MANIFEST C:\Dev\GraceConnect\src\GraceConnect.Maui\bin\Debug\net10.0-windows10.0.19041.0\win-x64\GraceConnect.Maui.exe.WebView2\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
+2026/04/29-16:31:42.516 c140 Reusing MANIFEST C:\Dev\GraceConnect\src\GraceConnect.Maui\bin\Debug\net10.0-windows10.0.19041.0\win-x64\GraceConnect.Maui.exe.WebView2\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
+2026/04/29-16:31:42.517 c140 Recovering log #3
+2026/04/29-16:31:42.518 c140 Reusing old log C:\Dev\GraceConnect\src\GraceConnect.Maui\bin\Debug\net10.0-windows10.0.19041.0\win-x64\GraceConnect.Maui.exe.WebView2\EBWebView\Default\shared_proto_db\metadata/000003.log 

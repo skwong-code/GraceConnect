@@ -105,6 +105,10 @@
               "target": "Package",
               "version": "[10.0.7, )",
               "autoReferenced": true
+            },
+            "Supabase": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             }
           },
           "imports": [
@@ -426,6 +430,10 @@
               "target": "Package",
               "version": "[10.0.7, )",
               "autoReferenced": true
+            },
+            "Supabase": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             }
           },
           "imports": [
@@ -747,6 +755,10 @@
               "target": "Package",
               "version": "[10.0.7, )",
               "autoReferenced": true
+            },
+            "Supabase": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             }
           },
           "imports": [
@@ -1063,6 +1075,10 @@
             "Microsoft.Maui.Controls": {
               "target": "Package",
               "version": "[10.0.20, )"
+            },
+            "Supabase": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             }
           },
           "imports": [
@@ -1437,6 +1453,10 @@
             "Microsoft.AspNetCore.Components.Web": {
               "target": "Package",
               "version": "[10.0.6, )"
+            },
+            "Supabase": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             }
           },
           "imports": [

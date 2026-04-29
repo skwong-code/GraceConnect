@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\GraceConnect.Maui.props" />
-</Project>

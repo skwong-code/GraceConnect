@@ -1,0 +1,44 @@
+# Ignore configuration files with secrets
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Staging.json
+secrets.json
+*.user
+
+# Ignore compiled binaries and build artifacts
+bin/
+obj/
+dist/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+
+# Ignore IDE and editor files
+.vs/
+.vscode/
+*.sln.iml
+*.suo
+*.sln.docstates
+*.userprefs
+.DS_Store
+Thumbs.db
+
+# Ignore NuGet packages
+packages/
+*.nupkg
+*.snupkg
+
+# Ignore local environment files
+.env
+.env.local
+local.settings.json
+
+# Ignore build outputs
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/

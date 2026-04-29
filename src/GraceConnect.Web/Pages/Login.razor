@@ -1,0 +1,99 @@
+﻿@page "/login"
+@rendermode @(new Microsoft.AspNetCore.Components.Web.InteractiveServerRenderMode())
+@using GraceConnect.Shared
+@using Microsoft.AspNetCore.Components.Web
+@using static Supabase.Gotrue.Constants
+
+@inject SupabaseService Supabase
+@inject NavigationManager Navigation
+@inject ILogger<Login> Logger
+
+<PageTitle>Grace Connect - Login</PageTitle>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <h2 class="text-center mb-4">Grace Connect</h2>
+            <p class="text-center text-muted mb-4">Connecting people to God and to each other</p>
+            
+            <div class="mb-3">
+                <input @bind="email" type="email" class="form-control" placeholder="Email address" />
+            </div>
+            <div class="mb-3">
+                <input @bind="password" type="password" class="form-control" placeholder="Password" />
+            </div>
+            
+            <button @onclick="HandleLogin" class="btn btn-primary w-100 mb-2">Login with Email</button>
+            <button @onclick="HandleRegister" class="btn btn-outline-primary w-100 mb-4">Create New Account</button>
+
+            <div class="text-center my-3">— or —</div>
+
+            <button @onclick="() => HandleSocialLogin(Provider.Google)" class="btn btn-outline-danger w-100 mb-2">
+                Continue with Google
+            </button>
+            <button @onclick="() => HandleSocialLogin(Provider.Apple)" class="btn btn-outline-dark w-100 mb-3">
+                Continue with Apple
+            </button>
+
+            @if (!string.IsNullOrEmpty(message))
+            {
+                <div class="alert alert-info mt-3">@message</div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    private string email = "";
+    private string password = "";
+    private string message = "";
+
+    private async Task HandleLogin()
+    {
+        try
+        {
+            var session = await Supabase.LoginAsync(email, password);
+            if (session?.User != null)
+            {
+                Navigation.NavigateTo("/dashboard");
+            }
+            else
+            {
+                message = "Invalid email or password.";
+            }
+        }
+        catch
+        {
+            message = "Login failed. Please try again.";
+        }
+    }
+
+    private async Task HandleRegister()
+    {
+        try
+        {
+            var session = await Supabase.RegisterAsync(email, password);
+            message = "Registration successful! Check your email to confirm.";
+        }
+        catch (Exception ex)
+        {
+            message = $"Registration failed: {ex.Message}";
+        }
+    }
+
+    private async Task HandleSocialLogin(Provider provider)
+    {
+        try
+        {
+            var url = await Supabase.GetOAuthSignInUrlAsync(provider);
+            if (!string.IsNullOrEmpty(url))
+            {
+                Navigation.NavigateTo(url, true);
+            }
+        }
+        catch (Exception ex)
+        {
+            message = $"Social login failed: {ex.Message}";
+        }
+    }
+}

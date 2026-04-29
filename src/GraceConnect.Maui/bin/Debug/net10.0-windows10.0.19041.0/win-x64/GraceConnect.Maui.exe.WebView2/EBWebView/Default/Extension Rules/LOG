@@ -1,2 +1,3 @@
-2026/04/29-11:13:47.382 5e50 Creating DB C:\Dev\GraceConnect\src\GraceConnect.Maui\bin\Debug\net10.0-windows10.0.19041.0\win-x64\GraceConnect.Maui.exe.WebView2\EBWebView\Default\Extension Rules since it was missing.
-2026/04/29-11:13:47.430 5e50 Reusing MANIFEST C:\Dev\GraceConnect\src\GraceConnect.Maui\bin\Debug\net10.0-windows10.0.19041.0\win-x64\GraceConnect.Maui.exe.WebView2\EBWebView\Default\Extension Rules/MANIFEST-000001
+2026/04/29-16:06:57.440 9bd0 Reusing MANIFEST C:\Dev\GraceConnect\src\GraceConnect.Maui\bin\Debug\net10.0-windows10.0.19041.0\win-x64\GraceConnect.Maui.exe.WebView2\EBWebView\Default\Extension Rules/MANIFEST-000001
+2026/04/29-16:06:57.442 9bd0 Recovering log #3
+2026/04/29-16:06:57.443 9bd0 Reusing old log C:\Dev\GraceConnect\src\GraceConnect.Maui\bin\Debug\net10.0-windows10.0.19041.0\win-x64\GraceConnect.Maui.exe.WebView2\EBWebView\Default\Extension Rules/000003.log 

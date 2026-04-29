@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Dev\\GraceConnect\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Dev\\GraceConnect\\gobal.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:gobal.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D12273DB-5EB4-B0CC-A7C7-7EAD3D076FA6}|src\\GraceConnect.Web\\GraceConnect.Web.csproj|c:\\dev\\graceconnect\\src\\graceconnect.web\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D12273DB-5EB4-B0CC-A7C7-7EAD3D076FA6}|src\\GraceConnect.Web\\GraceConnect.Web.csproj|solutionrelative:src\\graceconnect.web\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05ADB9CB-CB74-D801-6740-748DBA581F0F}|src\\GraceConnect.Maui\\GraceConnect.Maui.csproj|c:\\dev\\graceconnect\\src\\graceconnect.maui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{05ADB9CB-CB74-D801-6740-748DBA581F0F}|src\\GraceConnect.Maui\\GraceConnect.Maui.csproj|solutionrelative:src\\graceconnect.maui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05ADB9CB-CB74-D801-6740-748DBA581F0F}|src\\GraceConnect.Maui\\GraceConnect.Maui.csproj|c:\\dev\\graceconnect\\src\\graceconnect.maui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05ADB9CB-CB74-D801-6740-748DBA581F0F}|src\\GraceConnect.Maui\\GraceConnect.Maui.csproj|solutionrelative:src\\graceconnect.maui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +35,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "gobal.json",
-              "DocumentMoniker": "C:\\Dev\\GraceConnect\\gobal.json",
-              "RelativeDocumentMoniker": "gobal.json",
-              "ToolTip": "C:\\Dev\\GraceConnect\\gobal.json",
-              "RelativeToolTip": "gobal.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Dev\\GraceConnect\\src\\GraceConnect.Web\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "src\\GraceConnect.Web\\Pages\\Login.razor",
+              "ToolTip": "C:\\Dev\\GraceConnect\\src\\GraceConnect.Web\\Pages\\Login.razor",
+              "RelativeToolTip": "src\\GraceConnect.Web\\Pages\\Login.razor",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-29T23:34:52.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Dev\\GraceConnect\\src\\GraceConnect.Maui\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\GraceConnect.Maui\\appsettings.json",
+              "ToolTip": "C:\\Dev\\GraceConnect\\src\\GraceConnect.Maui\\appsettings.json",
+              "RelativeToolTip": "src\\GraceConnect.Maui\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-29T18:04:46.339Z",
+              "WhenOpened": "2026-04-29T22:55:26.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Dev\\GraceConnect\\src\\GraceConnect.Maui\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "src\\GraceConnect.Maui\\MauiProgram.cs",
+              "ToolTip": "C:\\Dev\\GraceConnect\\src\\GraceConnect.Maui\\MauiProgram.cs",
+              "RelativeToolTip": "src\\GraceConnect.Maui\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T22:42:36.94Z",
               "EditorCaption": ""
             }
           ]
