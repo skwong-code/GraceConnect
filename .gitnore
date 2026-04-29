@@ -1,0 +1,40 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.sln.user
+
+# MAUI / Blazor Hybrid
+**/AppPackages/
+**/PublishProfiles/
+**/bin/
+**/obj/
+*.appxrecipe
+*.pfx
+*.cer
+
+# Blazor Web / Server
+**/wwwroot/css/bootstrap.css
+**/wwwroot/css/bootstrap.min.css
+
+# API / Backend
+appsettings.Development.json
+appsettings.*.json
+secrets.json
+*.Development.*
+
+# Supabase / Azure secrets (NEVER commit these!)
+**/Supabase/ConnectionString
+**/Azure/StorageConnectionString
+**/*.pfx
+**/*.cer
+
+# Local DB / Migrations (we’ll handle DB via Supabase)
+**/Migrations/*.sql
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+*.log

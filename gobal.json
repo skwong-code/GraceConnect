@@ -1,0 +1,6 @@
+{
+  "sdk": {
+    "version": "10.0.100", // ← update this number to match what shows in list-sdks
+    "rollForward": "latestFeature"
+  }
+}

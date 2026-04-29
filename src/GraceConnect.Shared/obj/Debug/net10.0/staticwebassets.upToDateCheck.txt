@@ -1,0 +1,3 @@
+wwwroot\background.png
+wwwroot\exampleJsInterop.js
+C:\Dev\GraceConnect\src\GraceConnect.Shared\wwwroot\exampleJsInterop.js

@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Dev\\GraceConnect\\src\\GraceConnect.Shared\\obj\\Debug\\net10.0\\scopedcss\\projectbundle\\GraceConnect.Shared.bundle.scp.css",
+      "PackagePath": "staticwebassets\\GraceConnect.Shared.yy2nus1e6v.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Dev\\GraceConnect\\src\\GraceConnect.Shared\\wwwroot\\background.png",
+      "PackagePath": "staticwebassets\\background.png"
+    },
+    {
+      "Id": "C:\\Dev\\GraceConnect\\src\\GraceConnect.Shared\\wwwroot\\exampleJsInterop.js",
+      "PackagePath": "staticwebassets\\exampleJsInterop.js"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0\\staticwebassets\\msbuild.GraceConnect.Shared.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0\\staticwebassets\\msbuild.GraceConnect.Shared.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0\\staticwebassets\\msbuild.build.GraceConnect.Shared.props",
+      "PackagePath": "build\\GraceConnect.Shared.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0\\staticwebassets\\msbuild.buildMultiTargeting.GraceConnect.Shared.props",
+      "PackagePath": "buildMultiTargeting\\GraceConnect.Shared.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0\\staticwebassets\\msbuild.buildTransitive.GraceConnect.Shared.props",
+      "PackagePath": "buildTransitive\\GraceConnect.Shared.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

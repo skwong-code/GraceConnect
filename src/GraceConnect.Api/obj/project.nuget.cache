@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "cuDubgUHQ8g=",
+  "success": true,
+  "projectFilePath": "C:\\Dev\\GraceConnect\\src\\GraceConnect.Api\\GraceConnect.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Stephan\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.6\\microsoft.aspnetcore.openapi.10.0.6.nupkg.sha512",
+    "C:\\Users\\Stephan\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

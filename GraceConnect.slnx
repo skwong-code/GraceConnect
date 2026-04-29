@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/GraceConnect.Api/GraceConnect.Api.csproj" />
+    <Project Path="src/GraceConnect.Maui/GraceConnect.Maui.csproj" />
+    <Project Path="src/GraceConnect.Shared/GraceConnect.Shared.csproj" />
+    <Project Path="src/GraceConnect.Web/GraceConnect.Web.csproj" />
+  </Folder>
+</Solution>
