@@ -1,0 +1,42 @@
+@inherits LayoutComponentBase
+
+<div class="d-flex flex-column min-vh-100">
+    <header class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="">Grace Connect</a>
+
+            <!-- Public Navigation -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><NavLink href="" class="nav-link" Match="NavLinkMatch.All">Home</NavLink></li>
+                    <li class="nav-item"><NavLink href="events" class="nav-link">Events</NavLink></li>
+                    <li class="nav-item"><NavLink href="sermons" class="nav-link">Sermons</NavLink></li>
+                    <li class="nav-item"><NavLink href="live" class="nav-link">Live Stream</NavLink></li>
+                    <li class="nav-item"><NavLink href="about" class="nav-link">About Us</NavLink></li>
+                </ul>
+
+                <!-- Login / Register (public for now) -->
+                <div class="d-flex">
+                    <a href="/login" class="btn btn-light btn-sm">Login / Register</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main class="flex-grow-1">
+        @Body
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-auto">
+        <div class="container text-center">
+            <small>© Grace Connect • Phoenix, AZ • All Rights Reserved</small>
+        </div>
+    </footer>
+</div>

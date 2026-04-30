@@ -1,0 +1,97 @@
+@page "/"
+
+<PageTitle>Grace Connect - Grace Church Phoenix</PageTitle>
+
+<!-- Top Navigation (CCV-style) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="/">Grace Connect</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item"><a class="nav-link" href="/live">Live</a></li>
+                <li class="nav-item"><a class="nav-link" href="/events">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="/sermons">Sermons</a></li>
+                <li class="nav-item"><a class="nav-link" href="/volunteer">Serve</a></li>
+                <li class="nav-item"><a class="nav-link" href="/prayer">Prayer</a></li>
+                <li class="nav-item"><a class="nav-link" href="/directory">Directory</a></li>
+                
+                <!-- Auth placeholder -->
+                <li class="nav-item ms-3">
+                    <a href="/login" class="btn btn-outline-light btn-sm px-4">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section - CCV inspired -->
+<section class="position-relative text-white text-center d-flex align-items-center"
+         style="background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://picsum.photos/id/1015/2000/1200') no-repeat center center/cover; min-height: 90vh;">
+    
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-xl-7">
+                <h1 class="display-1 fw-bold mb-3">Welcome to<br>Grace Connect</h1>
+                <p class="lead fs-3 mb-4">Connecting hearts at Grace Church • Phoenix, AZ</p>
+                
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-5">
+                    <a href="/live" class="btn btn-danger btn-lg px-5 py-3 fs-4">
+                        <i class="bi bi-play-circle-fill me-2"></i>Watch Live
+                    </a>
+                    <a href="/events" class="btn btn-outline-light btn-lg px-5 py-3 fs-4">See Upcoming Events</a>
+                </div>
+
+                <!-- This Sunday -->
+                <div class="bg-white bg-opacity-10 backdrop-blur rounded-4 p-4 d-inline-block mx-auto">
+                    <p class="mb-1 fw-medium text-light">This Sunday • May 3, 2026</p>
+                    <h4 class="mb-0">9:00 AM &amp; 11:00 AM • In-Person &amp; Online</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Dashboard Cards (MVP focus) -->
+<div class="container py-5">
+    <div class="row g-4">
+        <div class="col-md-3">
+            <div class="card h-100 border-0 shadow-sm text-center p-4">
+                <i class="bi bi-calendar3 fs-1 text-primary mb-3"></i>
+                <h5 class="card-title">Upcoming Events</h5>
+                <p class="card-text text-muted">Find your next gathering or small group.</p>
+                <a href="/events" class="btn btn-outline-primary mt-auto">View Calendar</a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100 border-0 shadow-sm text-center p-4">
+                <i class="bi bi-mic fs-1 text-danger mb-3"></i>
+                <h5 class="card-title">Latest Sermons</h5>
+                <p class="card-text text-muted">Watch, listen, or read past messages.</p>
+                <a href="/sermons" class="btn btn-outline-danger mt-auto">Browse Library</a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100 border-0 shadow-sm text-center p-4">
+                <i class="bi bi-people-fill fs-1 text-success mb-3"></i>
+                <h5 class="card-title">Volunteer / Serve</h5>
+                <p class="card-text text-muted">Use your gifts — shift signup is live!</p>
+                <a href="/volunteer" class="btn btn-outline-success mt-auto">Find Opportunities</a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100 border-0 shadow-sm text-center p-4">
+                <i class="bi bi-pray fs-1 text-info mb-3"></i>
+                <h5 class="card-title">Prayer Requests</h5>
+                <p class="card-text text-muted">Submit &amp; pray with your church family.</p>
+                <a href="/prayer" class="btn btn-outline-info mt-auto">Share a Request</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PLACE

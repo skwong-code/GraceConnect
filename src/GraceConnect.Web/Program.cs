@@ -1,4 +1,5 @@
 using GraceConnect.Web.Components;
+using GraceConnect.Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,15 +8,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 // === SUPABASE AUTH (Priority 1) ===
-var supabaseUrl = builder.Configuration["Supabase:Url"]
-    ?? throw new InvalidOperationException("Supabase URL missing in appsettings.json");
-var supabaseAnonKey = builder.Configuration["Supabase:AnonKey"]
-    ?? throw new InvalidOperationException("Supabase AnonKey missing in appsettings.json");
-
-var supabaseService = new GraceConnect.Shared.SupabaseService(supabaseUrl, supabaseAnonKey);
-await supabaseService.InitializeAsync();
-
-builder.Services.AddSingleton(supabaseService);
+builder.Services.AddSupabase(builder.Configuration);
 
 var app = builder.Build();
 
@@ -33,6 +26,7 @@ app.UseAntiforgery();
 
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
-    .AddInteractiveServerRenderMode();
+    .AddInteractiveServerRenderMode()
+    .AddAdditionalAssemblies(typeof(GraceConnect.Shared.Components.Pages.Home).Assembly);
 
 app.Run();

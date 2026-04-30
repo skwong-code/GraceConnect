@@ -1,6 +1,6 @@
-﻿<Router AppAssembly="typeof(MauiProgram).Assembly" NotFoundPage="typeof(Pages.NotFound)">
+﻿<Router AppAssembly="typeof(MauiProgram).Assembly" AdditionalAssemblies="new[] { typeof(GraceConnect.Shared.Components.Pages.Home).Assembly }" NotFoundPage="typeof(Pages.NotFound)">
     <Found Context="routeData">
-        <RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)" />
+        <RouteView RouteData="routeData" DefaultLayout="typeof(GraceConnect.Shared.Components.Layout.MainLayout)" />
         <FocusOnNavigate RouteData="routeData" Selector="h1" />
     </Found>
 </Router>
