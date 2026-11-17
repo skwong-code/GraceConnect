@@ -77,4 +77,10 @@
       <ProjectReference Include="..\GraceConnect.Shared\GraceConnect.Shared.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+        <None Update="appsettings.json;appsettings.Local.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
 </Project>

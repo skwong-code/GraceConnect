@@ -14,9 +14,11 @@ public static class MauiProgram
         var builder = MauiApp.CreateBuilder();
 #pragma warning restore CA1416
 
-        // Load Supabase config from appsettings.json (key is now hidden)
+        // Supabase:Url and Supabase:AnonKey. appsettings.Local.json overrides
+        // the bundled appsettings.json when that file is present.
         var config = new ConfigurationBuilder()
             .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+            .AddJsonFile("appsettings.Local.json", optional: true, reloadOnChange: true)
             .Build();
 
         builder.Services.AddSupabase(config);
